@@ -1,4 +1,4 @@
-![Famiy Bingo Demo](./demo.png?raw=true "Family Bingo Demo")
+![Family Bingo Demo](https://github.com/josephemorgan/family_bingo/blob/master/demo.pnghttps://github.com/josephemorgan/family_bingo/blob/master/demo.png)
 # Family Bingo
 
 Family Bingo is a ultra lightweight, simple Christmas-themed bingo display written in React.
