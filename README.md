@@ -1,4 +1,4 @@
-![Family Bingo Demo](https://github.com/josephemorgan/family_bingo/blob/master/demo.pnghttps://github.com/josephemorgan/family_bingo/blob/master/demo.png)
+![Family Bingo Demo](https://github.com/josephemorgan/family_bingo/blob/master/demo.png)
 # Family Bingo
 
 Family Bingo is a ultra lightweight, simple Christmas-themed bingo display written in React.
@@ -14,6 +14,7 @@ serve -s build
 ```
 
 ## Usage
+Using the bingo board is extremely simple. Click the numbers as they're called, refresh the page to reset the game.
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
