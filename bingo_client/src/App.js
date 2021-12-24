@@ -15,22 +15,23 @@ class App extends React.Component {
     this.handleClick = this.handleClick.bind(this);
   }
 
-  callAPI() {
-    fetch("http://localhost:5000/testAPI")
-      .then(res => res.text())
-      .then(res => console.log({ apiResponse: res }));
-  }
-
   handleClick(i) {
     let number = parseInt(i.currentTarget.innerText);
-    const newState = this.state.rolledNumbers.concat([number]);
-    this.setState({
-      rolledNumbers: newState,
-    });
+    let numbers = this.state.rolledNumbers.slice();
+    if (numbers.includes(number)) {
+      numbers.splice(numbers.indexOf(number), 1);
+      this.setState({
+        rolledNumbers: numbers,
+      });
+    } else {
+      console.log("nonduplicate entered");
+      this.setState({
+        rolledNumbers: numbers.concat([number])
+      });
+    }
   }
 
   render() {
-    this.callAPI();
     let current;
     if (this.state.rolledNumbers.length >= 1) {
       current = this.state.rolledNumbers[this.state.rolledNumbers.length - 1];
